@@ -18,7 +18,7 @@ In your template of that view, simply add `data-gene` attribute to every element
 
 If you only want to make a certain part visible for admins, you can set `Genetics.genes({admin: true})` for specific users. All elements with `data-gene="admin"` will be removed if that gene isn’t true.
 
-You can also use multiple genes in elements, like: `data-gen="admin user"` which means it has to comply to both genes, otherwise it’ll be removed from the view.
+You can also use multiple genes in elements, like: `data-gene="admin user"` which means it has to comply to both genes, otherwise it’ll be removed from the view.
 
 That’s it.
 
