@@ -1,0 +1,15 @@
+{
+  "name": "backbone.genetics",
+  "main": "backbone.genetics.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/awkward/backbone.genetics",
+  "authors": [
+    "David van Leeuwen <david@madeawkward.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "test",
+    "tests"
+  ]
+}
