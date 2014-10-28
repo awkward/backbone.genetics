@@ -1,10 +1,10 @@
 ## Backbone.Genetics
 
-[![Build Status](https://travis-ci.org/awkward/backbone.genetics.svg?branch=master)](https://travis-ci.org/awkward/backbone.genetics)
+[![Build Status](https://travis-ci.org/awkward/backbone.genetics.svg)](https://travis-ci.org/awkward/backbone.genetics)
 
 A super small and simple plugin for Backbone.js to remove features from your app for user management, A/B testing purposes and all things you’d like to enable for specific users and hide from others.
 
-Backbone.Genetics.js let’s you define ‘genes’, that are parts of your template (defined as `data-gene="myGen"`), which will be removed from your view during the rendering of your view.
+Backbone.Genetics.js let’s you define ‘genes’, that are parts of your template (defined as `data-gene="myGene"`), which will be removed from your view during the rendering of your view.
 
 #### Download
 Backbone is required, Marionette is optional.

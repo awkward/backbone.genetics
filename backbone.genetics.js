@@ -1,14 +1,14 @@
 (function() {
-  (function(root, factory) {
+  (function(factory) {
     if (typeof define === "function" && define.amd) {
-      return define(["exports", "underscore", "backbone"], factory);
+      return define(["underscore", "backbone", "exports"], factory);
     } else if (typeof exports === "object") {
-      return factory(exports, require("underscore"), require("backbone"));
+      return factory(require("underscore"), require("backbone"), exports);
     } else {
-      return root.Backbone.Modal = factory((root.commonJsStrict = {}), root._, root.Backbone);
+      return factory(_, Backbone, {});
     }
-  })(this, function(exports, _, Backbone) {
-    return Backbone.Genetics = (function() {
+  })(function(_, Backbone, Genetics) {
+    Genetics = (function() {
       function Genetics(options) {
         this.options = options != null ? options : {};
         this.genes = this.options.genes || {};
@@ -100,6 +100,8 @@
       return Genetics;
 
     })();
+    Backbone.Genetics = Genetics;
+    return Backbone.Genetics;
   });
 
 }).call(this);

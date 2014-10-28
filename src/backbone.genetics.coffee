@@ -1,17 +1,13 @@
-((root, factory) ->
+((factory) ->
   if typeof define is "function" and define.amd
-    define [
-      "exports"
-      "underscore"
-      "backbone"
-    ], factory
+    define(["underscore", "backbone", "exports"], factory)
   else if typeof exports is "object"
-    factory(exports, require("underscore"), require("backbone"))
+    factory(require("underscore"), require("backbone"), exports)
   else
-    root.Backbone.Modal = factory((root.commonJsStrict = {}), root._, root.Backbone)
-) this, (exports, _, Backbone) ->
+    factory(_, Backbone, {})
+) (_, Backbone, Genetics) ->
 
-  class Backbone.Genetics
+  class Genetics
     constructor: (@options = {}) ->
       # genes define the feature blocks that are available in this app
       @genes = @options.genes || {}
@@ -55,3 +51,7 @@
 
     set: (genes) ->
       @genes["#{gene}"] = genes[gene] for gene of genes
+
+      
+  Backbone.Genetics = Genetics
+  return Backbone.Genetics
