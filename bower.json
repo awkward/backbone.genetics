@@ -1,7 +1,7 @@
 {
   "name": "backbone.genetics",
   "main": "backbone.genetics.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/awkward/backbone.genetics",
   "authors": [
     "David van Leeuwen <david@madeawkward.com>"

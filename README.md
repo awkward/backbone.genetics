@@ -8,8 +8,8 @@ Backbone.Genetics.js let’s you define ‘genes’, that are parts of your temp
 
 #### Download
 Backbone is required, Marionette is optional.
-* Minified: [backbone.genetics-min.js](https://raw.github.com/awkward/backbone.genetics/master/backbone.genetics-min.js)
-* Unminified: [backbone.genetics.js](https://raw.github.com/awkward/backbone.genetics/master/backbone.genetics.js)
+* Minified: [backbone.genetics-min.js](https://raw.github.com/awkward/backbone.genetics/v0.0.2/backbone.genetics-min.js)
+* Unminified: [backbone.genetics.js](https://raw.github.com/awkward/backbone.genetics/v0.0.2/backbone.genetics.js)
 
 #### How to use
 It’s very easy to implement. Once your view is rendering, in Backbone it’s the `render` method and for Marionette it’s the `onRender` method, you want to use `Genetics.bind(this)`.
